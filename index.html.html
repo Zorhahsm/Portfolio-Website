@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Shahroz - Supply Chain & Data Analyst</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light Gray */
+            color: #334155; /* Slate 700 */
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 8px; /* Space for the underline */
+            margin-bottom: 2rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 70%; /* Adjust width as needed */
+            height: 3px;
+            background-color: #2563eb; /* Blue 600 */
+            border-radius: 9999px; /* Fully rounded */
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 2.5rem; /* Increased padding for more spacious feel */
+        }
+        .btn-primary {
+            display: inline-block;
+            padding: 0.85rem 1.75rem; /* Slightly larger buttons */
+            background-color: #2563eb; /* Blue 600 */
+            color: white;
+            border-radius: 0.5rem; /* rounded-lg */
+            font-weight: 600; /* font-semibold */
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .btn-primary:hover {
+            background-color: #1d4ed8; /* Blue 700 */
+            transform: translateY(-2px); /* Subtle lift effect */
+        }
+        .btn-secondary {
+            display: inline-block;
+            padding: 0.85rem 1.75rem;
+            background-color: transparent;
+            border: 2px solid #2563eb;
+            color: #2563eb;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #2563eb;
+            color: white;
+            transform: translateY(-2px);
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #bfdbfe; /* Blue 200 for hover */
+        }
+    </style>
+</head>
+<body class="antialiased leading-normal">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-900 text-white p-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-300">Shahroz.</a>
+            <div class="space-x-6 hidden md:flex">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 mt-4 py-2 rounded-lg">
+            <a href="#about" class="block px-4 py-2 text-white hover:bg-gray-700">About</a>
+            <a href="#skills" class="block px-4 py-2 text-white hover:bg-gray-700">Skills</a>
+            <a href="#experience" class="block px-4 py-2 text-white hover:bg-gray-700">Experience</a>
+            <a href="#projects" class="block px-4 py-2 text-white hover:bg-gray-700">Projects</a>
+            <a href="#blog" class="block px-4 py-2 text-white hover:bg-gray-700">Blog</a>
+            <a href="#contact" class="block px-4 py-2 text-white hover:bg-gray-700">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-blue-700 to-indigo-800 text-white py-20 md:py-28 px-4 rounded-b-3xl shadow-xl flex items-center justify-center min-h-[50vh]">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down">
+                Muhammad Shahroz
+            </h1>
+            <p class="text-xl md:text-2xl font-light mb-8 opacity-90 animate-fade-in-up">
+                Transforming Operations with Data: Supply Chain & Logistics Optimization Specialist
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#projects" class="btn-primary animate-scale-in">View My Work <i class="fas fa-arrow-right ml-2"></i></a>
+                <a href="#contact" class="btn-secondary animate-scale-in">Get In Touch <i class="fas fa-envelope ml-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-16 px-4">
+
+        <!-- About Section -->
+        <section id="about" class="mb-20 card">
+            <h2 class="text-4xl font-bold text-gray-800 section-title">About Me</h2>
+            <div class="text-lg leading-relaxed text-slate-700">
+                <p class="mb-4">
+                    As an analytical and results-oriented Mechanical Engineer with a proven track record in logistics coordination, I am passionately transitioning into Supply Chain Data Analysis. My expertise lies in leveraging data-driven solutions to optimize logistics, streamline complex processes, and significantly enhance operational efficiency.
+                </p>
+                <p class="mb-4">
+                    At JESPER LOGISTICS LLC, I've successfully boosted monthly revenue by 30% through strategic freight booking optimization and achieved 99% on-time delivery by proactively resolving operational disruptions. My foundation in supply chain principles, risk management, and continuous improvement drives my commitment to transforming challenges into tangible results.
+                </p>
+                <p>
+                    I am eager to contribute my problem-solving and analytical skills to a dynamic organization, with a long-term vision of innovating within international trade and e-commerce. Let's build efficient and resilient supply chains together.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-20 card">
+            <h2 class="text-4xl font-bold text-gray-800 section-title">Core Competencies</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm flex flex-col items-center">
+                    <i class="fas fa-chart-line text-5xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3 text-blue-800">Data Analysis & Forecasting</h3>
+                    <ul class="list-none space-y-2 text-slate-700 text-left">
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Data Analysis & Interpretation</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Demand Forecasting Models</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Performance Metrics & KPI Analysis</li>
+                    </ul>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm flex flex-col items-center">
+                    <i class="fas fa-boxes text-5xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3 text-blue-800">Supply Chain & Logistics</h3>
+                    <ul class="list-none space-y-2 text-slate-700 text-left">
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Supply Chain Optimization</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Logistics Management</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Inventory Planning & Control</li>
+                    </ul>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm flex flex-col items-center">
+                    <i class="fas fa-tools text-5xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3 text-blue-800">Tools & Methodologies</h3>
+                    <ul class="list-none space-y-2 text-slate-700 text-left">
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>MS Excel (Advanced) & Google Sheets</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>TMS Platforms (DAT, Truckstop)</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Lean Six Sigma Principles</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-10 text-center">
+                <a href="#" download="Muhammad Shahroz - Resume.docx" class="btn-primary">
+                    Download Full Resume <i class="fas fa-download ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-20 card">
+            <h2 class="text-4xl font-bold text-gray-800 section-title">Professional Journey</h2>
+
+            <!-- Logistics Coordinator -->
+            <div class="mb-10 p-6 border border-gray-200 rounded-lg shadow-sm bg-slate-50">
+                <h3 class="text-2xl font-semibold text-gray-800 flex items-center mb-2">
+                    <i class="fas fa-truck-moving text-blue-600 mr-3"></i> Logistics Coordinator
+                </h3>
+                <p class="text-blue-600 font-medium mb-3">JESPER LOGISTICS LLC | Jan 2024 – Present</p>
+                <ul class="list-disc list-inside space-y-2 text-slate-700">
+                    <li>Optimized freight booking for 12+ U.S. carriers, boosting monthly revenue by 30% through data-driven adjustments.</li>
+                    <li>Achieved 99% on-time delivery by resolving 95% of operational disruptions within 2 hours.</li>
+                    <li>Ensured 100% compliance with U.S. FMCSA/DOT regulations.</li>
+                    <li>Automated workflows using TMS platforms and MS Excel, increasing dispatch efficiency by 15%.</li>
+                </ul>
+            </div>
+
+            <!-- Career-Prep Fellow -->
+            <div class="mb-10 p-6 border border-gray-200 rounded-lg shadow-sm bg-slate-50">
+                <h3 class="text-2xl font-semibold text-gray-800 flex items-center mb-2">
+                    <i class="fas fa-users text-blue-600 mr-3"></i> Career-Prep Fellow & Ambassador
+                </h3>
+                <p class="text-blue-600 font-medium mb-3">AMAL ACADEMY | Aug 2023 – Nov 2023</p>
+                <ul class="list-disc list-inside space-y-2 text-slate-700">
+                    <li>Selected for intensive 3-month Fellowship funded by Stanford University (USA) and PepsiCo, competing over 4,500 applicants.</li>
+                    <li>Developed essential business skills (communication, time management, teamwork, problem-solving, leadership) through 150+ hours of immersive training.</li>
+                    <li>Engaged 200+ university students as Fellowship Ambassador, generating 50+ enrollment signups through effective outreach.</li>
+                </ul>
+            </div>
+
+            <!-- Other Relevant Experience (Concise) -->
+            <div class="p-6 border border-gray-200 rounded-lg shadow-sm bg-slate-50">
+                <h3 class="text-2xl font-semibold text-gray-800 flex items-center mb-2">
+                    <i class="fas fa-wrench text-blue-600 mr-3"></i> Early Career & Freelance
+                </h3>
+                <p class="text-blue-600 font-medium mb-3">Intern Mechanical Engineer (Pakistan Railways) & WordPress Developer (Freelancer)</p>
+                <ul class="list-disc list-inside space-y-2 text-slate-700">
+                    <li>Applied mechanical engineering principles to optimize systems and conducted quality assurance tests.</li>
+                    <li>Achieved 100% client satisfaction as a WordPress Developer by creating user-friendly, market-competitive websites.</li>
+                    <li>Explore projects: <a href="https://achieve4success.co.uk/" target="_blank" class="text-blue-600 hover:underline font-medium">achieve4success.co.uk</a>, <a href="http://www.yellowlinedrivingschool.co.uk" target="_blank" class="text-blue-600 hover:underline font-medium">yellowlinedrivingschool.co.uk</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-20 card">
+            <h2 class="text-4xl font-bold text-gray-800 section-title">Key Projects & Initiatives</h2>
+
+            <!-- Strategic Market Analysis - REVISED DESCRIPTION -->
+            <div class="mb-10 p-6 border border-gray-200 rounded-lg shadow-sm bg-slate-50">
+                <h3 class="text-2xl font-semibold text-gray-800 flex items-center mb-2">
+                    <i class="fas fa-chart-pie text-blue-600 mr-3"></i> Data-Driven Strategic Analysis & Model Development
+                </h3>
+                <p class="text-blue-600 font-medium mb-3">Analytical Lead</p>
+                <ul class="list-disc list-inside space-y-2 text-slate-700">
+                    <li>Conducted in-depth market data analysis to identify key trends and patterns, utilizing advanced Excel techniques for data collection, organization, and interpretation.</li>
+                    <li>Developed a robust analytical model and strategic framework, demonstrating foresight and predictive capabilities through data-driven projections.</li>
+                    <li>Applied systematic problem-solving and quantitative reasoning to derive actionable insights, a methodology directly transferable to supply chain optimization and demand planning.</li>
+                </ul>
+            </div>
+
+            <!-- HDH Water Purification System -->
+            <div class="mb-10 p-6 border border-gray-200 rounded-lg shadow-sm bg-slate-50">
+                <h3 class="text-2xl font-semibold text-gray-800 flex items-center mb-2">
+                    <i class="fas fa-water text-blue-600 mr-3"></i> HDH Technology Operated Water Purification System
+                </h3>
+                <p class="text-blue-600 font-medium mb-3">Lead Research Engineer | Jul 2022 – May 2023</p>
+                <ul class="list-disc list-inside space-y-2 text-slate-700">
+                    <li>Spearheaded the development of a humidification-dehumidification technology-based water purifier, first of its kind in Pakistan, producing 5 liters/hour for under PKR 50,000/-.</li>
+                    <li>Ensured economic viability and sustainability by utilizing 100% solar energy and recycled waste materials.</li>
+                    <li>Led a 4-member FYP team, overseeing research and thesis development.</li>
+                </ul>
+            </div>
+
+            <!-- Walk-Behind Rice Transplanter -->
+            <div class="p-6 border border-gray-200 rounded-lg shadow-sm bg-slate-50">
+                <h3 class="text-2xl font-semibold text-gray-800 flex items-center mb-2">
+                    <i class="fas fa-seedling text-blue-600 mr-3"></i> Walk-Behind Rice Transplanter Development
+                </h3>
+                <p class="text-blue-600 font-medium mb-3">Associate Research Engineer | Aug 2021 – May 2022</p>
+                <ul class="list-disc list-inside space-y-2 text-slate-700">
+                    <li>Conducted research for the local development of a manual and affordable rice seedling machine in Pakistan, aimed at reducing labor hours and boosting crop productivity for smallholder farmers.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Blog/Insights Section -->
+        <section id="blog" class="mb-20 card">
+            <h2 class="text-4xl font-bold text-gray-800 section-title">Insights & Research</h2>
+            <div class="text-lg leading-relaxed text-slate-700">
+                <p class="mb-6">
+                    This section serves as a platform for my research, articles, and thoughts on supply chain innovation, data analytics trends, and the evolving landscape of global trade and e-commerce.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Example Blog Post Card 1 -->
+                    <div class="border border-gray-200 rounded-lg p-6 shadow-sm bg-slate-50 transition transform hover:scale-105 duration-300">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">The Digital Transformation of Supply Chains</h3>
+                        <p class="text-sm text-gray-500 mb-3">Published: June 16, 2025</p>
+                        <p class="text-slate-700 mb-4">Exploring how technologies like AI, IoT, and Blockchain are revolutionizing traditional supply chain models and fostering greater efficiency and transparency.</p>
+                        <a href="#" class="text-blue-600 hover:underline font-medium flex items-center">Read Article <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                    </div>
+                    <!-- Example Blog Post Card 2 -->
+                    <div class="border border-gray-200 rounded-lg p-6 shadow-sm bg-slate-50 transition transform hover:scale-105 duration-300">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Data Analytics: The Core of Logistics Optimization</h3>
+                        <p class="text-sm text-gray-500 mb-3">Published: May 20, 2025</p>
+                        <p class="text-slate-700 mb-4">A deep dive into how data analytics provides actionable insights for optimizing freight, inventory, and warehouse operations, drawing from real-world examples.</p>
+                        <a href="#" class="text-blue-600 hover:underline font-medium flex items-center">Read Article <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                    </div>
+                </div>
+
+                <!-- Gemini API LLM Feature -->
+                <div class="mt-12 p-6 border border-blue-300 bg-blue-50 rounded-lg shadow-md text-center">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-4">Daily Supply Chain Insight</h3>
+                    <p class="text-slate-700 mb-6">Click below to generate a new insight on supply chain, logistics, or data analytics, powered by Gemini AI!</p>
+                    <button id="generateInsightBtn" class="btn-primary flex items-center justify-center mx-auto">
+                        <i class="fas fa-lightbulb mr-2"></i> Generate a Supply Chain Insight ✨
+                    </button>
+                    <div id="insightOutput" class="mt-8 p-4 bg-white rounded-lg border border-gray-200 text-left text-slate-800 min-h-[100px] flex items-center justify-center text-gray-500 italic">
+                        Click the button to get a fresh insight!
+                    </div>
+                    <div id="loadingIndicator" class="hidden mt-4 text-blue-600">
+                        <i class="fas fa-spinner fa-spin mr-2"></i> Generating insight...
+                    </div>
+                </div>
+
+                <p class="text-center text-gray-600 mt-10 text-base">More insights and research coming soon!</p>
+            </div>
+        </section>
+
+        <!-- Future E-commerce Section (Optional/Placeholder) -->
+        <section id="ecommerce" class="mb-20 card">
+            <h2 class="text-4xl font-bold text-gray-800 section-title">Future Horizons: E-commerce & Trade</h2>
+            <div class="text-lg leading-relaxed text-slate-700 text-center">
+                <p class="mb-4">
+                    My long-term vision includes venturing into international trade and e-commerce. This space is reserved for showcasing future initiatives, product lines, or analyses related to cross-border logistics and online retail.
+                </p>
+                <p class="font-medium text-blue-600 mt-6">
+                    Stay tuned for exciting updates as I expand into this dynamic field!
+                </p>
+                <i class="fas fa-store-alt text-6xl text-gray-400 mt-8"></i>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="card">
+            <h2 class="text-4xl font-bold text-gray-800 section-title">Connect With Me</h2>
+            <div class="text-lg leading-relaxed text-slate-700 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <p class="mb-6">I'm always open to discussing new opportunities, collaborations, or innovative solutions in supply chain and data analytics. Let's connect and explore how I can contribute to your success.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-2xl text-blue-600 mr-4"></i>
+                            <a href="mailto:mshahroz620@gmail.com" class="text-blue-600 hover:underline text-lg font-medium">mshahroz620@gmail.com</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-2xl text-blue-600 mr-4"></i>
+                            <span class="text-lg font-medium">+92-302-4071471</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-linkedin text-2xl text-blue-600 mr-4"></i>
+                            <a href="https://linkedin.com/in/muhammadshahroz620" target="_blank" class="text-blue-600 hover:underline text-lg font-medium">linkedin.com/in/muhammadshahroz620</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center md:text-right">
+                    <!-- Updated with user's provided image -->
+                    <img src="uploaded:My Pic Blue.png-a16100a1-7e0d-4395-a817-ff583b719e61" alt="Muhammad Shahroz" class="rounded-full w-48 h-48 mx-auto md:mr-0 border-4 border-blue-200 shadow-lg object-cover">
+                    <p class="text-sm text-gray-500 mt-3">Ready to make an impact!</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-10 mt-16 rounded-t-3xl">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 Muhammad Shahroz. All rights reserved.</p>
+            <p class="mt-2">Designed with <span class="text-red-500">&hearts;</span> and powered by Data.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu after clicking a link
+                if (window.innerWidth < 768) {
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Placeholder for resume download (replace # with actual path)
+        document.querySelector('a[download="Muhammad Shahroz - Resume.docx"]').addEventListener('click', function(e) {
+            // In a real deployment, replace '#' with the actual path to your resume file.
+            // Example: this.href = '/assets/Muhammad_Shahroz_Resume.pdf';
+            console.log("Downloading resume placeholder. Please update the href with your actual resume file path.");
+        });
+
+        // Gemini API Integration for Supply Chain Insight
+        document.getElementById('generateInsightBtn').addEventListener('click', async () => {
+            const insightOutput = document.getElementById('insightOutput');
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            const generateButton = document.getElementById('generateInsightBtn');
+
+            insightOutput.innerHTML = ''; // Clear previous insight
+            loadingIndicator.classList.remove('hidden'); // Show loading indicator
+            generateButton.disabled = true; // Disable button during generation
+            generateButton.classList.add('opacity-50', 'cursor-not-allowed');
+
+            const prompt = "Generate a concise (2-3 sentences) insightful statement about a current trend or key challenge in supply chain management, logistics optimization, or data analytics as it applies to supply chain. Focus on actionable insights or future implications. Make it sound professional and forward-looking.";
+            
+            let chatHistory = [];
+            chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+            const payload = { contents: chatHistory };
+            const apiKey = ""; // Canvas will automatically provide the API key here
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const result = await response.json();
+
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    insightOutput.textContent = text;
+                    insightOutput.classList.remove('text-gray-500', 'italic'); // Remove placeholder styling
+                } else {
+                    insightOutput.textContent = "Could not generate insight. Please try again.";
+                    insightOutput.classList.add('text-red-500'); // Add error styling
+                }
+            } catch (error) {
+                console.error('Error generating insight:', error);
+                insightOutput.textContent = "Error connecting to AI. Please try again later.";
+                insightOutput.classList.add('text-red-500'); // Add error styling
+            } finally {
+                loadingIndicator.classList.add('hidden'); // Hide loading indicator
+                generateButton.disabled = false; // Re-enable button
+                generateButton.classList.remove('opacity-50', 'cursor-not-allowed');
+            }
+        });
+    </script>
+
+</body>
+</html>
